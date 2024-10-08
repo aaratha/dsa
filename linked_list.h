@@ -14,9 +14,9 @@ struct DoubleNode {
 
 class List {
 
-    Node* head;
 
     public:
+        Node* head;
         List();
         List(std::initializer_list<int> list);
 

@@ -1,4 +1,5 @@
 #include "linked_list.h"
+#include "stack.h"
 #include <iostream>
 
 auto main(int argc, char *argv[]) -> int {
@@ -31,5 +32,14 @@ auto main(int argc, char *argv[]) -> int {
     List B = List{1,2,3,4};
     B.print();
 
+    Stack G = Stack();
+    G.push(2);
+    G.push(5);
+    G.print();
+    printf(" %d\n", G.pop());
+    G.print();
+    printf(" %d\n", G.is_empty());
+    G.pop();
+    printf(" %d\n", G.is_empty());
     return 0;
 }
