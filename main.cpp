@@ -1,5 +1,6 @@
 #include "linked_list.h"
 #include "stack.h"
+#include "queue.h"
 #include <iostream>
 
 auto main(int argc, char *argv[]) -> int {
@@ -41,5 +42,14 @@ auto main(int argc, char *argv[]) -> int {
     printf(" %d\n", G.is_empty());
     G.pop();
     printf(" %d\n", G.is_empty());
+
+    Queue Q = Queue();
+    Q.enqueue(2);
+    Q.enqueue(4);
+    Q.print();
+    Q.enqueue(8);
+    Q.print();
+    Q.dequeue();
+    Q.print();
     return 0;
 }
